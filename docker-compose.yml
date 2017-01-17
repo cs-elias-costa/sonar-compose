@@ -11,7 +11,7 @@ services:
     environment:
       - SONARQUBE_JDBC_URL=jdbc:mysql://db:3306/sonar?useUnicode=true&characterEncoding=utf8
       - SONARQUBE_JDBC_USERNAME=root
-      - SONARQUBE_JDBC_PASSWORD=sun123
+      - SONARQUBE_JDBC_PASSWORD=yourpasswordhere
     volumes:
       - /opt/sonarqube/conf:/opt/sonarqube/conf
       - /opt/sonarqube/data:/opt/sonarqube/data
@@ -26,7 +26,7 @@ services:
     networks:
       - sonarnet
     environment:
-      - MYSQL_ROOT_PASSWORD=sun123
+      - MYSQL_ROOT_PASSWORD=yourpasswordhere
     volumes:
       - /var/lib/mysql:/var/lib/mysql
 networks:
